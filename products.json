@@ -1,0 +1,95 @@
+[
+  {
+    "id": "bulk-file-renamer",
+    "name": "Bulk File Renamer",
+    "slug": "bulk-file-renamer",
+    "tagline": "Rename folders full of files in one clean pass.",
+    "description": "Rename many files at once with simple offline rules.",
+    "category": "File Utility",
+    "platform": "macOS",
+    "price": "$5",
+    "bundleEligible": true,
+    "status": "Available",
+    "icon": "assets/icons/bulk-file-renamer.png",
+    "thumbnail": "assets/icons/bulk-file-renamer.png",
+    "screenshot": "assets/screenshots/bulk-file-renamer.svg",
+    "video": "assets/videos/bulk-file-renamer.mp4",
+    "features": [
+      "Batch rename files",
+      "Preview before applying changes",
+      "Add prefixes and suffixes",
+      "Clean messy filenames",
+      "Number files automatically",
+      "Reorder naming rules",
+      "Works offline",
+      "No account required"
+    ],
+    "links": {
+      "gumroad": "https://gallonlabs.gumroad.com/l/bulk-filename-renamer-mac",
+      "itch": "#",
+      "github": "#"
+    }
+  },
+  {
+    "id": "csv-cleaner-toolkit",
+    "name": "CSV Cleaner Toolkit",
+    "slug": "csv-cleaner-toolkit",
+    "tagline": "Clean messy CSVs before upload or analysis.",
+    "description": "Clean messy CSV files offline before analysis or upload.",
+    "category": "Data Utility",
+    "platform": "macOS",
+    "price": "$5",
+    "bundleEligible": true,
+    "status": "Available",
+    "icon": "assets/icons/csv-cleaner-toolkit.png",
+    "thumbnail": "assets/icons/csv-cleaner-toolkit.png",
+    "screenshot": "assets/screenshots/csv-cleaner-toolkit.svg",
+    "video": "assets/videos/CSV CLEANER.mp4",
+    "features": [
+      "Remove empty rows",
+      "Trim whitespace",
+      "Remove duplicates",
+      "Clean column data",
+      "Preview before export",
+      "Export cleaned CSV files",
+      "Works offline",
+      "No account required"
+    ],
+    "links": {
+      "gumroad": "https://gallonlabs.gumroad.com/l/csv-cleaner-toolkit",
+      "itch": "https://tinyutilitylab.itch.io/csv-cleaner-toolkit",
+      "github": "#"
+    }
+  },
+  {
+    "id": "pdf-split-merge-utility",
+    "name": "PDF Split Merge Utility",
+    "slug": "pdf-split-merge-utility",
+    "tagline": "Merge, split, and organize PDFs locally.",
+    "description": "Merge, split, and organize PDF files locally on your Mac.",
+    "category": "Document Utility",
+    "platform": "macOS",
+    "price": "$5",
+    "bundleEligible": true,
+    "status": "Available",
+    "icon": "assets/icons/pdf-split-merge-utility.png",
+    "thumbnail": "assets/icons/pdf-split-merge-utility.png",
+    "screenshot": "assets/screenshots/pdf-split-merge-utility.svg",
+    "video": "assets/videos/pdf-split-merge-utility.mp4",
+    "features": [
+      "Merge multiple PDFs",
+      "Split PDFs into pages",
+      "Split custom page ranges",
+      "Reorder PDFs before merging",
+      "Drag and drop support",
+      "Dark and light mode",
+      "Works offline",
+      "No account required"
+    ],
+    "links": {
+      "gumroad": "https://gallonlabs.gumroad.com/l/pdf-split-merge-utility",
+      "itch": "https://tinyutilitylab.itch.io/pdf-split-merge-utility",
+      "github": "#"
+    }
+  }
+]

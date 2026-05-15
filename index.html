@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AutomatorLabs builds small offline desktop utilities for files, data, PDFs, and repetitive digital chores."
+    />
+    <title>AutomatorLabs | Offline Utility Apps</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Main navigation">
+        <a class="brand" href="#top" aria-label="AutomatorLabs home">
+          <span class="brand-mark">AL</span>
+          <span>AutomatorLabs</span>
+        </a>
+        <div class="nav-links">
+          <a href="#tools">Tools</a>
+          <a href="#early-deal">Early Deal</a>
+          <a href="#bundle">Bundle</a>
+          <a href="#why-offline">Why Offline</a>
+          <a href="#newsletter">Newsletter</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <a class="button button-small" href="#tools">Browse Tools</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-pad">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Offline desktop utilities</p>
+            <h1>Small offline tools for annoying digital chores.</h1>
+            <p class="hero-subhead">
+              AutomatorLabs sells lightweight desktop utilities for cleaning
+              files, organizing data, and reducing repetitive work without
+              subscriptions, accounts, or cloud uploads.
+            </p>
+            <div class="hero-actions">
+              <a class="button" href="#tools">Browse Tools</a>
+              <a class="button button-secondary" href="#bundle">Get Full Bundle</a>
+            </div>
+            <ul class="trust-badges" aria-label="Product trust badges">
+              <li>Offline-first</li>
+              <li>One-time purchase</li>
+              <li>No cloud uploads</li>
+              <li>No accounts</li>
+              <li>Private by design</li>
+              <li>Fast local tools</li>
+              <li>No subscriptions for early buyers</li>
+              <li>Built for boring tasks</li>
+            </ul>
+            <p class="early-note">
+              Early buyers lock in one-time access before AutomatorLabs moves
+              toward a monthly subscription model.
+            </p>
+          </div>
+          <div class="hero-panel" aria-hidden="true">
+            <div class="terminal-window">
+              <div class="terminal-aura"></div>
+              <div class="terminal-scanline"></div>
+              <div class="terminal-top">
+                <span></span>
+                <span></span>
+                <span></span>
+                <em>automatorlabs://local-run</em>
+              </div>
+              <div class="terminal-body">
+                <p class="terminal-line command command-one"><span>$</span><b>scan ~/Downloads</b></p>
+                <p class="terminal-line muted result-one">42 files found</p>
+                <p class="terminal-line command command-two"><span>$</span><b>clean --offline --preview</b></p>
+                <p class="terminal-line success result-two">ready: rename, merge, export</p>
+                <div class="terminal-grid">
+                  <i></i>
+                  <i></i>
+                  <i></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="early-deal section-pad" id="early-deal">
+        <div class="deal-box">
+          <div>
+            <p class="eyebrow">Early access</p>
+            <h2>Early buyer deal</h2>
+            <p>
+              The first 10 customers get lifetime one-time access as a
+              thank-you for supporting the first AutomatorLabs tools. Future
+              pricing may change as the tool library grows.
+            </p>
+          </div>
+          <div class="deal-counter" aria-label="Early buyer pricing details">
+            <div>
+              <span>First 10 buyers</span>
+              <strong>Lifetime one-time access</strong>
+            </div>
+            <div>
+              <span>After that</span>
+              <strong>Pricing increases and future tools may move to monthly subscription access.</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog section-pad" id="tools">
+        <div class="section-heading">
+          <p class="eyebrow">Tool catalog</p>
+          <h2>Useful tools. No bloat.</h2>
+        </div>
+        <div class="catalog-grid" id="product-grid" aria-live="polite"></div>
+        <p class="catalog-note" id="catalog-note" hidden>
+          Product catalog could not be loaded from products.json. Showing the
+          built-in fallback catalog.
+        </p>
+      </section>
+
+      <section class="bundle section-pad" id="bundle">
+        <div class="bundle-box">
+          <div>
+            <p class="eyebrow">Bundle</p>
+            <h2>Get all 3 AutomatorLabs tools together.</h2>
+            <p>
+              The full bundle includes Bulk File Renamer, CSV Cleaner Toolkit,
+              and PDF Split Merge Utility.
+            </p>
+          </div>
+          <div class="pricing-panel">
+            <div class="price-row">
+              <span>Individual tools</span>
+              <strong>$5 each</strong>
+            </div>
+            <div class="price-row bundle-price">
+              <span>Full bundle</span>
+              <strong>$12</strong>
+            </div>
+            <!-- Replace # with the real Gumroad bundle link when it is ready. -->
+            <a class="button" href="https://gallonlabs.gumroad.com/l/bundle" target="_blank" rel="noopener noreferrer">Get the Bundle</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="why section-pad" id="why-offline">
+        <div class="why-grid">
+          <div>
+            <p class="eyebrow">Local-first</p>
+            <h2>Why offline tools?</h2>
+          </div>
+          <div>
+            <p>
+              Online tools are convenient until they ask you to upload private
+              files, create accounts, or send simple work through a cloud app.
+              AutomatorLabs tools stay local, lightweight, and boring in the
+              best way.
+            </p>
+            <ul class="check-list">
+              <li>Your files stay on your computer</li>
+              <li>Early buyers lock in one-time access</li>
+              <li>No account setup</li>
+              <li>No internet required for core usage</li>
+              <li>Built for fast, repetitive tasks</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter section-pad" id="newsletter">
+        <div class="newsletter-box">
+          <div>
+            <p class="eyebrow">New drops</p>
+            <h2>Get new utility drops</h2>
+            <p>
+              Join the AutomatorLabs list to hear when new offline tools,
+              bundles, and early-buyer deals go live.
+            </p>
+          </div>
+          <form name="newsletter" method="POST" data-netlify="true" action="/success.html" class="newsletter-form">
+            <input type="hidden" name="form-name" value="newsletter" />
+            <input type="email" name="email" placeholder="you@example.com" required />
+            <button type="submit">Join the list</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="faq section-pad" id="faq">
+        <div class="section-heading">
+          <p class="eyebrow">FAQ</p>
+          <h2>Quick answers.</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Are these SaaS apps?</summary>
+            <p>No. They are downloadable desktop utilities.</p>
+          </details>
+          <details>
+            <summary>Do the tools upload my files?</summary>
+            <p>No. The tools are designed to work locally.</p>
+          </details>
+          <details>
+            <summary>Are updates included?</summary>
+            <p>Minor updates may be included depending on the product.</p>
+          </details>
+          <details>
+            <summary>Do I need technical skills?</summary>
+            <p>No. These tools are built for normal users.</p>
+          </details>
+          <details>
+            <summary>What platforms are supported?</summary>
+            <p>Current builds focus on macOS first.</p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>AutomatorLabs</strong>
+        <p>Offline utilities for people who hate digital busywork.</p>
+      </div>
+      <div class="footer-links">
+        <a class="disabled-link" href="#" aria-disabled="true">GitHub</a>
+        <a class="disabled-link" href="#" aria-disabled="true">Gumroad</a>
+        <a class="disabled-link" href="#" aria-disabled="true">itch.io</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
