@@ -9,6 +9,7 @@ This is a plain HTML, CSS, and JavaScript project. There is no backend, no React
 ```text
 AutomatorLabs Landing Page/
 ├── index.html
+├── success.html
 ├── styles.css
 ├── script.js
 ├── products.json
@@ -109,6 +110,8 @@ The newsletter form uses Netlify Forms:
 ```
 
 It is static HTML and does not need a backend in this project. Form submissions only work after the site is deployed on Netlify with form detection enabled. When previewing locally, the form markup appears normally, but submissions will not be collected.
+
+Successful newsletter submissions redirect to `success.html`, a custom branded thank-you page.
 
 ## Future automation plan
 
