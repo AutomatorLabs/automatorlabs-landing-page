@@ -124,7 +124,7 @@ function createAction(label, href, muted = false) {
 }
 
 function createDemoAction(product) {
-  const action = createAction("View Demo", product.video, true);
+  const action = createAction("Watch how it works", product.video, true);
 
   if (isUsableLink(product.video)) {
     action.removeAttribute("target");
@@ -267,7 +267,7 @@ function renderProducts(products) {
     const actions = document.createElement("div");
     actions.className = "card-actions";
     actions.append(
-      createAction("Buy Now", product.links.gumroad),
+      createAction("I want this!", product.links.gumroad),
       createDemoAction(product)
     );
 

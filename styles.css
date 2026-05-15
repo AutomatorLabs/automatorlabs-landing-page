@@ -26,6 +26,7 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
+  overflow-x: hidden;
   background:
     radial-gradient(circle at top left, rgba(57, 168, 255, 0.2), transparent 32rem),
     radial-gradient(circle at 80% 12%, rgba(154, 108, 255, 0.16), transparent 28rem),
@@ -213,10 +214,9 @@ h3 {
 .trust-badges {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 10px 18px;
 }
 
-.trust-badges li,
 .badge {
   border: 1px solid var(--line);
   border-radius: 999px;
@@ -227,7 +227,22 @@ h3 {
 }
 
 .trust-badges li {
-  padding: 7px 11px;
+  position: relative;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.trust-badges li::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 8px;
+  border-radius: 999px;
+  background: var(--cyan);
+  box-shadow: 0 0 14px rgba(53, 243, 255, 0.58);
 }
 
 .early-note {
@@ -1846,15 +1861,12 @@ details p {
 
 @media (max-width: 900px) {
   .nav-shell {
-    flex-wrap: wrap;
-    padding: 14px 0;
+    min-height: 66px;
+    padding: 10px 0;
   }
 
   .nav-links {
-    order: 3;
-    width: 100%;
-    justify-content: space-between;
-    gap: 10px;
+    display: none;
   }
 
   .hero-grid,
@@ -1866,7 +1878,7 @@ details p {
   }
 
   .hero {
-    padding-top: 72px;
+    padding-top: 54px;
   }
 
   .catalog-grid {
@@ -1891,15 +1903,103 @@ details p {
   }
 
   .section-pad {
-    padding: 68px 0;
+    padding: 56px 0;
   }
 
   h1 {
-    font-size: 3.15rem;
+    font-size: clamp(2.65rem, 12vw, 3.35rem);
+    line-height: 0.98;
+    margin-bottom: 18px;
+  }
+
+  h2 {
+    font-size: clamp(1.9rem, 9vw, 2.55rem);
+  }
+
+  .brand {
+    gap: 8px;
+    font-size: 0.98rem;
+  }
+
+  .brand-mark {
+    width: 34px;
+    height: 34px;
+  }
+
+  .button-small {
+    min-height: 38px;
+    padding-inline: 12px;
+    font-size: 0.86rem;
+  }
+
+  .hero {
+    padding-top: 44px;
+  }
+
+  .hero-subhead {
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+
+  .hero-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 24px 0 22px;
+  }
+
+  .hero-actions .button {
+    width: 100%;
+  }
+
+  .trust-badges {
+    display: grid;
+    gap: 8px;
+  }
+
+  .trust-badges li {
+    font-size: 0.84rem;
+  }
+
+  .trust-badges li:nth-child(n + 5) {
+    display: none;
+  }
+
+  .early-note {
+    font-size: 0.94rem;
+    line-height: 1.45;
   }
 
   .hero-panel {
     min-height: auto;
+  }
+
+  .hero-panel .terminal-window {
+    max-width: 330px;
+    margin: 0 auto;
+  }
+
+  .hero-panel .terminal-top {
+    padding: 10px;
+  }
+
+  .hero-panel .terminal-top span {
+    width: 9px;
+    height: 9px;
+  }
+
+  .hero-panel .terminal-top em {
+    font-size: 0.62rem;
+  }
+
+  .hero-panel .terminal-body {
+    min-height: 210px;
+    padding: 22px;
+    font-size: 0.78rem;
+  }
+
+  .hero-panel .terminal-body p {
+    margin-bottom: 12px;
   }
 
   .catalog-grid {
